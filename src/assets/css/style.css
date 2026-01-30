@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  box-sizing: content-box; /* root bug */
+}
+
+body {
+  background: #eaeaea;
+  overflow-x: scroll;
+}
+
+/* TOP BAR */
+.top {
+  width: 1100px;
+  background: white;
+  padding: 10px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 2px solid #bbb;
+}
+
+.t1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.t2 {
+  display: inline-block;
+  margin-left: 250px;
+}
+
+.t2 a {
+  margin-right: 20px;
+  color: #888;
+  text-decoration: none;
+}
+
+.t3 {
+  float: right;
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+}
+
+/* SECTION A */
+.secA {
+  width: 1400px;
+  background: white;
+  margin: 100px auto 0 auto;
+  padding: 30px;
+  display: flex;
+}
+
+.a1 {
+  width: 500px;
+  margin-top: 150px;
+}
+
+.a1 h1 {
+  font-size: 55px;
+}
+
+.a1 p {
+  margin-top: 10px;
+}
+
+.a2 {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: blue;
+  color: white;
+  border: none;
+}
+
+/* IMAGE CHAOS */
+.a3 img {
+  width: 1000px;
+  height: 1200px;
+  object-fit: cover;
+  margin-left: -450px;
+  margin-top: -250px;
+  transform: rotate(4deg);
+  box-shadow: 0 20px 50px rgba(0,0,0,.5);
+}
+
+/* SECTION B */
+.secB {
+  width: 900px;
+  margin-left: 200px;
+  margin-top: 120px;
+}
+
+.b1 {
+  font-size: 28px;
+  margin-left: 100px;
+}
+
+.b2 {
+  display: flex;
+  gap: 15px;
+  margin-left: -200px;
+}
+
+.b3 {
+  width: 300px;
+  background: white;
+  padding: 15px;
+  float: left;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+.b4 {
+  margin-top: -90px;
+  background: #fff2a8;
+}
+
+/* SECTION C */
+.secC {
+  width: 300px;
+  background: white;
+  padding: 15px;
+  margin-top: 150px;
+  position: relative;
+  left: -300px;
+}
+
+.secC input {
+  width: 450px;
+  padding: 8px;
+}
+
+.secC button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+/* FOOTER */
+.secD {
+  background: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+/* RESPONSIVE PURE HELL */
+@media (max-width: 900px) {
+  .top {
+    width: 1600px;
+  }
+
+  .secA {
+    flex-direction: row; /* harusnya column */
+  }
+
+  .b2 {
+    flex-direction: row;
+  }
+
+  .a3 img {
+    width: 1600px;
+  }
+}

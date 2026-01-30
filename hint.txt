@@ -1,0 +1,12 @@
+KAMU HARUS BUAT UI MIRIP SEPERTI GAMBAR & VIDEO DI FOLDER /example
+
+buka folder /src/pages/ dan benerin UI di file index.html
+file css nya di folder /src/assets/css di file style.css
+file foto nya di folder /src/assets/img file gambar.jpeg
+
+
+SEMANGAT SEMANGAT !!
+kalau ada yang bingung jangan ragu di tanyain
+
+POINT PENTING :
+"bukan masalah kamu bisa atau tidak tapi kamu berani apa tidak dalam mengemban tugas."
